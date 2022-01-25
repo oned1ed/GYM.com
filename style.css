@@ -38,12 +38,10 @@ p.snos {
 	color: rgb(200,200,200);
 }
 img.snos {
+	transition: 1s;
 	transform: scaleZ(0.8);
 	border-radius: 25px;
 	background: rgba(200,200,200,0.2);
-}
-body.error {
-	background-image: url("error.jpg");
 }
 img.snos:hover {
 	transform: 
@@ -59,6 +57,12 @@ img.open-menu:hover {
 }
 img {
 	transition: 10s;
+}
+.tit1 {
+	background-position: 20px 100px;
+	text-decoration: overline underline;
+	font-size: 1em;
+	color: rgba(255,255,255,0.1);
 }
 a {
 	text-decoration: none;
@@ -91,6 +95,11 @@ hr.settings {
 	color: rgb(200,200,200);
 	height: 5px;
 }
+.div {
+	background: rgb(0,0,0);
+	border: 3px solid rgb(0,0,0);
+	border-radius: 5px;
+}
 .strel {
 	transition: 0.5s;
 	text-align: center;
@@ -110,7 +119,7 @@ hr.settings {
 @keyframes blink{
 	50% {
 		opacity: 0.5;
-		transform: scaleX(1.05);
+		transform: scaleX(1.15);
 	}
 }
 @keyframes title{
@@ -118,7 +127,9 @@ hr.settings {
 		background-color: 
 			rgb(255,0,165);
 		color: rgb(50,50,50);
-
+	}
+	50% {
+		transform: scaleX(0.95);
 	}
 	10% {
 		transform: scaleY(0.9);
