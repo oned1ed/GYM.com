@@ -12,10 +12,21 @@
 			function close() {
 				win.close()
 			}
-			setTimeout(close(), 5);
+			function copytext(el) {
+			    var $tmp = $("<textarea>");
+			    $("body").append($tmp);
+			    $tmp.val($(el).text()).select();
+			    document.execCommand("copy");
+			    $tmp.remove();
+} 
 		</script>
-		<img src="checkmenu/openmenu.png" class="open-menu">
-		<h1 class="gym-title">G&nbsp;Y&nbsp;M</h1>
+		<h1 class="snos">GYM.COM&copy;</h1>
+		<div class="snos">
+			<a style="font-size: 1.2em; background-color: rgb(0,0,0);" class="snos" href="https://boosty.to/onedied_">💸Поддержка авторов</a><br>
+			<a style="font-size: 1.2em; background-color: rgb(0,0,0);" class="snos" href="https://www.youtube.com/channel/UCRL8JMhHXjT_0rb8SkWpyAw">👀YouTube</a><br>
+			<a style="font-size: 1.2em; background-color: rgb(0,0,0);" class="snos" href="https://www.discord.com">🔑Проходка Discord</a>
+			<p class="snos">Разпространите популярность GYM.com: Делитесь ссылкой на <a class="snos" href="https://github.com/oned1ed/GYM.com">GitHub</a>
+		<h1 class="gym-title">G&nbsp;&nbsp;&nbsp;Y&nbsp;&nbsp;&nbsp;M</h1>
 		<p class="describtion">GYM (Gachi Young Masters Corp.) - это корпорация компании "GachiMuchi(c)". Авторские права зарегестрированны TV-Tokyo СМИ.</p>
 		<h1 class="tit">Наши Боги</h1>
 		<div class="snos">
