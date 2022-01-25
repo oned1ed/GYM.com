@@ -1,0 +1,131 @@
+body {
+	background: rgb(10,10,10);
+	font-family: "verdana";
+	font-weight: bold;
+}
+.gym-title {
+	text-align: center;
+	font-size: 5em;
+	font-weight: bold;
+	color: rgb(0,0,0);
+	padding: 10px;
+	background-color:  rgb(250,165,0);
+	border-radius: 25px;
+	animation: title 5s linear infinite;
+	border: 10px ridge rgb(0,0,0);
+}
+.describtion {
+	text-align: center;
+	color: rgb(150,150,150);
+	font-size: 1em;
+}
+div.snos {
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	border-radius: 25px;
+}
+h1.snos {
+	color: rgb(200,200,200);
+	text-align: center;
+	animation: blink 10s linear infinite;
+}
+h1.tit {
+	color: rgb(200,200,200);
+	text-align: center;
+	font-size: 5em;		
+}
+p.snos {
+	color: rgb(200,200,200);
+}
+img.snos {
+	transform: scaleZ(0.8);
+	border-radius: 25px;
+	background: rgba(200,200,200,0.2);
+}
+body.error {
+	background-image: url("error.jpg");
+}
+img.snos:hover {
+	transform: 
+		rotateY(500deg)
+		rotateZ(360deg)
+		scaleX(3)
+		scaleZ(-2)
+}
+img.open-menu:hover {
+	transform: 
+		rotate(90deg)
+		scale(1.1)
+}
+img {
+	transition: 10s;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Franklin Gothic Medium";
+	color: rgb(150,150,150);
+	background: rgba(200,200,200,0.15);
+	border-radius: 5px;
+}
+a:active {
+	color: rgb(100,100,100);
+	background: rgba(200,200,200,0.2);
+}
+a.button-tp {
+	text-decoration: none;
+	font-size: 3em;
+	color: rgb(5,5,5);
+	background-color: rgb(255,165,0);
+	padding: 5px;
+	border-radius: 15px;
+}
+div.settings {
+	border-radius: 10px;
+	border: 5px ridge rgb(200,200,200);
+	padding: 10px;
+}
+hr.settings {
+	border-radius: 5px;
+	background-color: rgb(200,200,200);
+	color: rgb(200,200,200);
+	height: 5px;
+}
+.strel {
+	transition: 0.5s;
+	text-align: center;
+	transform: matrix(1, 0, -0.5, 1, 0, 0);
+}
+.strel:hover {
+	transform: 
+		scale(1.05)
+		
+}
+.open-menu {
+	transition: 2s;
+	transform: menu 2s linear infinite;
+	background-position: 1300px 10px;
+	border-radius: 10px;
+}
+@keyframes blink{
+	50% {
+		opacity: 0.5;
+		transform: scaleX(1.05);
+	}
+}
+@keyframes title{
+	50% {
+		background-color: 
+			rgb(255,0,165);
+		color: rgb(50,50,50);
+
+	}
+	10% {
+		transform: scaleY(0.9);
+	}
+}
+@keyframes menu{
+	50% {
+		transform: rotate(360deg);
+	}
+}
